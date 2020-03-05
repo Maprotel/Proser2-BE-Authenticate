@@ -12,7 +12,7 @@ const chalk = require("chalk");
 global.__basedir = __dirname;
 
 // Dual database strategy
-const version = "2.3.9";
+const version = "1.0.0";
 
 require(`dotenv`).config();
 
@@ -72,7 +72,7 @@ app.start = function() {
           "/*********************** PROSER *************************/"
         )
       );
-      console.log("System Proser by Maprotel", version);
+      console.log("Autneticate Proser2 by Maprotel", version);
       console.log("Environment: ", chalk.hex("#E5E510")(process.env.NODE_ENV));
 
       console.log(

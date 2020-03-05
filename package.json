@@ -5,8 +5,8 @@
   "scripts": {
     "start": "npx babel-node src/server/server.js",
     "start-dev": "nodemon --exec npx babel-node src/server/server.js",
-    "build": "npx babel src --out-dir dist-authenticate --copy-files",
-    "start-prod": "npx node dist-authenticate/server/server.js",
+    "build": "npx babel src --out-dir dist --copy-files",
+    "start-prod": "npx node dist/server/server.js",
     "pretest": "jshint ."
   },
   "dependencies": {
