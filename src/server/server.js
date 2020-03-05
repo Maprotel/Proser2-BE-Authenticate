@@ -72,7 +72,7 @@ app.start = function() {
           "/*********************** PROSER *************************/"
         )
       );
-      console.log("Autneticate Proser2 by Maprotel", version);
+      console.log("Authenticate Proser2 by Maprotel", version);
       console.log("Environment: ", chalk.hex("#E5E510")(process.env.NODE_ENV));
 
       console.log(
