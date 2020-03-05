@@ -1,0 +1,107 @@
+{
+  "name": "Configuration",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "key": {
+      "type": "string",
+      "required": false,
+      "id": true
+    },
+    "value": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "checkIfExists"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "accessType": [
+        "READ",
+        "WRITE"
+      ]
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": [
+        "create",
+        "deleteById",
+        "findById",
+        "find",
+        "patchAttributes",
+        "replaceById",
+        "resetPassword",
+        "changePassword",
+        "__updateById",
+        "patch"
+      ]
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "system",
+      "permission": "ALLOW",
+      "accessType": [
+        "READ",
+        "WRITE"
+      ]
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "system",
+      "permission": "ALLOW",
+      "property": [
+        "create",
+        "deleteById",
+        "findById",
+        "find",
+        "patchAttributes",
+        "replaceById",
+        "resetPassword",
+        "changePassword"
+      ]
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "develop",
+      "permission": "ALLOW",
+      "accessType": [
+        "READ",
+        "WRITE"
+      ]
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "develop",
+      "permission": "ALLOW",
+      "property": [
+        "create",
+        "deleteById",
+        "findById",
+        "find",
+        "patchAttributes",
+        "replaceById",
+        "resetPassword",
+        "changePassword"
+      ]
+    }
+  ],
+  "methods": {}
+}

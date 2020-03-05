@@ -1,0 +1,37 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "proserInventory": {
+    "host": "${AUTHENTICATION_DB_HOST}",
+    "port": 3306,
+    "url": "",
+    "database": "${AUTHENTICATION_DB_NAME}",
+    "password": "${AUTHENTICATION_DB_PASSWORD_WRITE}",
+    "name": "proserInventory",
+    "user": "${AUTHENTICATION_DB_USER_WRITE}",
+    "connector": "mysql",
+    "connectTimeout": 30000,
+    "acquireTimeout": 20000
+  },
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "mail.test.com",
+        "secure": true,
+        "port": 25,
+        "tls": {
+          "rejectUnauthorized": true
+        },
+        "auth": {
+          "user": "test@test.com",
+          "pass": "password"
+        }
+      }
+    ]
+  }
+}

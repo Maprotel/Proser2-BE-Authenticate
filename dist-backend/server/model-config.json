@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "proserInventory",
+    "public": true
+  },
+  "AccessToken": {
+    "dataSource": "proserInventory",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "proserInventory",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "proserInventory",
+    "public": true
+  },
+  "Role": {
+    "dataSource": "proserInventory",
+    "public": true
+  },
+  "Userbase": {
+    "dataSource": "proserInventory",
+    "public": true,
+    "options": {
+      "emailVerificationRequired": false
+    }
+  },
+  "Modules": {
+    "dataSource": "proserInventory",
+    "public": true
+  },
+  "Configuration": {
+    "dataSource": "proserInventory",
+    "public": true
+  }
+}
